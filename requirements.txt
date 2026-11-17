@@ -1,0 +1,17 @@
+faster-whisper>=1.0.0
+sounddevice>=0.4.6
+numpy>=1.24.0
+pyautogui>=0.9.54
+psutil>=5.9.0
+pyttsx3>=2.90
+edge-tts>=7.3.1
+pygame>=2.5.0
+keyboard>=0.13.5
+requests>=2.31.0
+customtkinter>=5.2.0
+screeninfo>=0.8.1
+screen-brightness-control>=0.27.0
+pyperclip>=1.8.2
+Pillow>=10.0.0
+pywin32>=306; sys_platform == 'win32'
+PyInstaller>=6.0.0

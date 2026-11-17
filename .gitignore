@@ -1,0 +1,116 @@
+# ==============================================================================
+# J.A.R.V.I.S. / Buddy AI Voice Assistant - .gitignore
+# ==============================================================================
+
+# --- Python Environment & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+venv/
+env/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+
+# --- Large AI / ML Model Binaries ---
+# Models are downloaded dynamically via setup / doctor.py (too large for git)
+models/
+whisper-*/
+kokoro-*/
+*.onnx
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.tflite
+*.weights
+
+# --- User Configuration, Secrets & Hardware Settings ---
+# Contains local hardware device indices, volume levels, and private API keys
+.buddy_ai_config.json
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+
+# --- Local Machine Scans, Notes & Audit Logs ---
+.buddy_audit.log
+*.log
+logs/
+.buddy_tts_cache/
+.tts_cache/
+Buddy_Notes.txt
+
+# Dynamic machine-specific catalog and generated notes
+system_apps_catalog.json
+SYSTEM_APPS_NOTES.md
+
+# --- Temporary & Test Audio Files ---
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.aac
+*.m4a
+test.mp3
+test_*.mp3
+test_*.wav
+
+# Preserve UI Icons and Static Project Assets
+!assets/**
+
+# --- Packaging, PyInstaller & Executables ---
+build/
+dist/
+*.spec
+*.exe
+*.dll
+*.pyd
+*.manifest
+
+# --- IDEs, Text Editors & Project Workspaces ---
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# --- Operating System Generated Artifacts ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
